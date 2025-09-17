@@ -1,0 +1,111 @@
+/* auth.css */
+:root {
+    --primary-color: #3498db;
+    --primary-dark: #2980b9;
+    --bg-dark: #121212;
+    --bg-light: #1e1e1e;
+    --text-light: #ffffff;
+    --text-muted: #bbb;
+  }
+  
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: Arial, sans-serif;
+  }
+  
+  .auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: var(--text-light);
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary {
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .auth-footer {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--text-muted);
+  }
+  
+  .auth-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+
+
+  .error-message {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }

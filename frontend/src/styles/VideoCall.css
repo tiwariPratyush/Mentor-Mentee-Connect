@@ -1,0 +1,63 @@
+.video-call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 640px;
+    height: 480px;
+  }
+  
+  .remote-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .local-video {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid white;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .control-button:hover {
+    background-color: #45a049;
+  }
+  
+  .control-button.muted {
+    background-color: #f44336;
+  }
+  
+  .control-button.muted:hover {
+    background-color: #da190b;
+  }

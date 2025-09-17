@@ -1,0 +1,67 @@
+.common-home {
+    text-align: center;
+    padding: 2rem;
+    color: #ffffff;
+  }
+  
+  .main-heading {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .subtitle {
+    font-size: 1.8rem;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .feature {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 0 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+  }
+  
+  .feature h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+  }
+  
+  .feature p {
+    color: #e0e0e0;
+  }
+  
+  .cta-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+  
+  .cta-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+  }

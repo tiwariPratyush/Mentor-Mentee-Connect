@@ -1,0 +1,151 @@
+/* src/styles/mentor_dashboard/UserProfile.css */
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --accent-color: #4a90e2;
+  --accent-hover: #357abd;
+} 
+
+
+
+
+
+
+
+
+
+.user-profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-profile-form h2 {
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-profile-form input,
+.user-profile-form textarea,
+.user-profile-form .react-select__control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.user-profile-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #357abd;
+}
+
+/* Forceful styling for react-select */
+.react-select__control {
+  background-color: #2a2a2a !important;
+  border-color: #4a90e2 !important;
+  box-shadow: none !important;
+}
+
+.react-select__control:hover {
+  border-color: #357abd !important;
+}
+
+.react-select__menu {
+  background-color: #2a2a2a !important;
+  border: 1px solid #4a90e2 !important;
+}
+
+.react-select__option {
+  background-color: #2a2a2a !important;
+  color: #fff !important;
+}
+
+.react-select__option:hover,
+.react-select__option--is-focused {
+  background-color: #3a3a3a !important;
+}
+
+.react-select__option--is-selected {
+  background-color: #4a90e2 !important;
+}
+
+.react-select__single-value {
+  color: #fff !important;
+}
+
+.react-select__indicator-separator {
+  background-color: #4a90e2 !important;
+}
+
+.react-select__placeholder,
+.react-select__input-container {
+  color: #b3b3b3 !important;
+}
+
+.react-select__menu-list {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 #2a2a2a;
+}
+
+.react-select__menu-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.react-select__menu-list::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+.react-select__menu-list::-webkit-scrollbar-thumb {
+  background-color: #4a90e2;
+  border-radius: 4px;
+}
+
+.react-select__dropdown-indicator {
+  color: #4a90e2 !important;
+}
+
+.react-select__dropdown-indicator:hover {
+  color: #357abd !important;
+}
+
+/* Ensure text is visible when typing in the select input */
+.react-select__input input {
+  color: #fff !important;
+}

@@ -1,0 +1,121 @@
+.students-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .page-title {
+    font-size: 28px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .loading, .error, .no-students {
+    text-align: center;
+    font-size: 18px;
+    color: #4a90e2;
+    margin-top: 40px;
+  }
+  
+  .students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .student-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+  }
+  
+  .student-number {
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .student-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .student-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .student-details {
+    flex-grow: 1;
+  }
+  
+  .student-name {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+  }
+  
+  .student-email {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin: 0;
+  }
+  
+  .view-profile-btn {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-profile-btn:hover {
+    background-color: #3a7bc8;
+  }
+  
+  @media (max-width: 768px) {
+    .student-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .student-number {
+      margin-bottom: 10px;
+    }
+  
+    .student-info {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .view-profile-btn {
+      width: 100%;
+    }
+  }
